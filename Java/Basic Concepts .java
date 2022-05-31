@@ -35,6 +35,33 @@ main
 //You can add a Java doc style comment by using:
 /** and */ characters to wrap a comment.
 
+//4 Lesson
+
+//Which variable type would you use for a city name?
+//String
+
+//Drag and drop from the options below to have a valid Java program.
+
+class Apples {
+
+  public static void main(String[ ]args) {  
+ name = "John";    
+ age = 24;    
+ height = 189.87;
+  }
+}
+
+//Drag and drop from the options below to get user input.
+import java.util.Scanner;
+class test {
+   public static void main(String[ ] args) {      
+ Scanner sc = new Scanner(System.in);
+      String st = sc.nextLine();
+   }
+}
+
+
+
 
 
 
