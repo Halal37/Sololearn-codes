@@ -244,10 +244,9 @@ public class Program
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int amount = scanner.nextInt();
-		int loan = 20000;
 		for (int i=0;i<=2;i++){
-			loan = loan - loan * 1/10;
+			amount = amount - amount * 1/10;
 		}
-		System.out.println(loan);
+		System.out.println(amount);
 	}
 }
