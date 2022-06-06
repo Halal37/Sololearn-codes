@@ -266,4 +266,135 @@ static void change(Person p) {
 //10
 
 
-// 36 Leson
+// 36 Lesson
+
+//What is the value of the following expression?
+//Math.abs(Math.min(-6, 3));
+
+//6
+
+// 37 Lesson
+
+//Fill in the blank to declare a static variable.
+public static int x=0;
+
+/*
+What output results from this code?
+class Person {
+public static int pCount;	
+public static void main(String[ ] args) {			
+   Person.pCount = 1; 
+   Person.pCount++;
+   System.out.println(Person.pCount);		
+  }
+}
+*/
+
+//2
+
+// 38 Lesson
+
+//What keyword makes a variable a constant?
+
+//final
+
+// 39 Lesson
+
+//How many packages can be contained in a Java program?
+
+//as many as you need
+
+// 40 Lesson
+
+//Fill in the blank to define a method that does not return a value.
+
+//public void calc()
+
+//Which access modifier explicitly says that a method or variable of an object can be accessed by code from outside of the class of that object?
+
+//public
+
+//Rearrange the code to declare a method returning the greater of the two arguments.
+
+public int max(int a, int b){
+	if(a>b){
+		return a;
+	}
+	return b;
+}
+
+//Fill in the blanks to declare a method that takes one argument of type int.
+
+public int myFunc(int x) 
+{
+   return x*10;
+}
+
+//Fill in the blanks to create a method that returns the minimum of the two parameters.
+public int minFunc(int n1, int n2){
+
+   int min;
+
+   if (n1 > n2)
+
+      min = n2;
+   
+else
+      min = n1;
+
+   return min; 
+
+}
+
+//Fill in the blanks to create a class with a method called "myFunc" that takes no parameters, returns void, and prints "Hi" to the screen.
+public class MyClass 
+{
+   public void myFunc() {
+
+    System.out.println(''Hi'');
+
+   }
+
+}
+
+
+
+// 41 Lesson
+
+
+/*
+Binary Converter
+
+
+The binary numeric system uses only two digits: 0 and 1. Computers operate in binary, meaning they store data and perform calculations using only zeros and ones.
+
+You need to make a program to convert integer numbers to their binary representation.
+Create a Converter class with a static toBinary() method, which returns the binary version of its argument.
+The code in main takes a number as input and calls the corresponding static method. Make sure the code works as expected.
+
+Sample Input:
+42
+Sample Output:
+101010
+*/
+
+import java.util.Scanner;
+
+public class Converter{
+    public static String toBinary(int x){
+        String binary="";
+
+        while(x>0){
+            binary = (x%2)+binary;
+            x /=2;
+        }
+        return binary;
+    }
+}
+public class Program {
+    public static void main(String[ ] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        System.out.print(Converter.toBinary(x));
+    }
+}
