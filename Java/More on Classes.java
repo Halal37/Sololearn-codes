@@ -87,3 +87,71 @@ class B {
 //B
 
 // 46 Lesson
+
+//A class containing an abstract method is an abstract class.
+
+//True
+
+//Fill in the blanks to create an abstract class with an abstract method and inherit from it.
+
+abstract class Animal {
+
+  public int age;
+
+  public abstract int printAge();
+
+}
+
+class Dog extends Animal {
+
+  public int printAge() {
+
+    return age;
+
+  }	
+
+}
+
+// 47 Lesson
+
+//In Java, how many superclasses can your inherited subclass have?
+
+//only one
+
+//Drag and drop from the options below to implement an interface.
+interface Animal {
+
+   public void eat();
+
+}
+
+class Cat implements Animal {
+
+   public void eat() {
+
+      System.out.println("Cat eats");
+
+   }
+
+}
+
+
+// 48 Lesson
+
+/*
+What is the output of this code?
+public static void main(String[ ] args) {	
+  double x = 1.5;
+  double y = 2.65;
+  sum((int)x, (int)y);
+}
+static void sum(int x, int y) {
+   System.out.println(x + y);
+}
+*/
+
+//3
+
+
+// 49 Lesson
+
