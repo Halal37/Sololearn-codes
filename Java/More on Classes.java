@@ -1,4 +1,4 @@
-// 42 Lesson
+// 41 Lesson
 
 //Drag and drop from the options below to create a valid Java code with encapsulation.
 public class Person {				
@@ -17,7 +17,7 @@ public class Person {
 
 }
 
-// 43 Lesson
+// 42 Lesson
 
 //Fill in the blank to inherit the Car class from the Vehicle class.
 class Car extends Vehicle { }
@@ -54,13 +54,13 @@ class A {
 
 //False
 
-// 44 Lesson
+// 43 Lesson
 
 //Briefly, polymorphism is...
 
 //... one method, with different implementations
 
-// 45 Lesson
+// 44 Lesson
 
 //Overridden methods should have the same return type and arguments as the parent method.
 
@@ -86,7 +86,7 @@ class B {
 
 //B
 
-// 46 Lesson
+// 45 Lesson
 
 //A class containing an abstract method is an abstract class.
 
@@ -112,7 +112,7 @@ class Dog extends Animal {
 
 }
 
-// 47 Lesson
+// 46 Lesson
 
 //In Java, how many superclasses can your inherited subclass have?
 
@@ -136,7 +136,7 @@ class Cat implements Animal {
 }
 
 
-// 48 Lesson
+// 47 Lesson
 
 /*
 What is the output of this code?
@@ -153,5 +153,84 @@ static void sum(int x, int y) {
 //3
 
 
+// 48 Lesson
+
+/*
+What is the output of this code?
+class A {
+   public void print() {
+      System.out.println("A");
+   }
+}
+class B extends A {
+   public void print() {
+      System.out.println("B");
+   }
+   public static void main(String[ ] args) {
+    A object = new B();
+    B b = (B) object;
+    b.print();
+   }
+}
+*/
+
+//B
+
 // 49 Lesson
 
+//Fill in the blanks to override the start method of the Machine class.
+Machine m = 
+new Machine() {
+
+   
+@Override public void start() {
+
+      System.out.println("Hi");
+
+   }
+
+}
+
+//Drag and drop from the options below to print "Hello".
+class A {
+
+   public void print() {
+
+   System.out.println("A");
+
+   }		
+
+}
+
+class B {				
+
+   public static void main(String[ ] args) {	
+ 
+   A object = new A() {
+
+
+      @Override public void print() {
+
+       System.out.println("Hello");
+
+       }
+
+    };
+
+    object.print();
+
+   }		
+
+}
+
+// 50 Lesson
+
+//Rearrange the code to have an inner class Hand, which has a method called "shake" that prints "Hi".
+
+public class Person {
+class Hand{
+	public void shake(){
+	System.out.println("Hi");}
+}}
+
+// 51 Lesson
