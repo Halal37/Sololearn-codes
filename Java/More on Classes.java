@@ -234,3 +234,205 @@ class Hand{
 }}
 
 // 51 Lesson
+
+/*
+What is the output of this code?
+class A {
+ private int x;	
+ public static void main(String[ ] args) {
+   A a = new A();
+   a.x = 5;
+   A b = new A();
+   b.x = 5;
+   System.out.println(a == b);			
+ }
+}
+*/
+
+//false
+
+//Drag and drop from the options below to check whether the two objects of type A are semantically equal.
+class A {
+
+   private int x;
+
+   public boolean equals(Object o) {
+    
+   return ((A)o).x == this.x;
+   }	
+
+   public static void main(String[ ] args)  {
+
+    A a = new A();
+
+    a.x = 9;
+
+    A b = new A();
+
+    b.x = 5;
+
+    System.out.println(a.equals(b));
+
+   }
+
+}
+
+
+// 52 Lesson
+
+//Enums are used to declare variables that represent...
+
+//members of a fixed set
+
+//Drag and drop from the options below to create an Enum called "Color", with the values RED, BLUE, GREEN.
+public enum Color  {
+
+  RED, BLUE, GREEN;
+
+}
+
+/*
+What is the output of this code?
+enum Color  {
+  RED, BLUE, GREEN;
+}
+class PrintColor {
+   public static void main(String[ ] args) {
+   Color color = Color.RED; 
+   switch(color) {
+   case BLUE:
+     System.out.println("1");
+   break;
+   case GREEN:
+     System.out.println("2");
+   break;
+   default:
+     System.out.println("0");
+   break;		 
+   }
+}
+}
+*/
+
+//0
+ 
+ 
+// 53 Lesson
+
+//Fill in the blank to import all types in the package awt.
+import java.awt.*;
+
+
+// 54 Lesson
+
+/*
+What is the output of this code?
+class A {
+   private void print() {
+     System.out.println(''a'');
+   }
+   private void print(String str) {
+     System.out.println(''b'');
+   }
+   private void print(int x) {
+     System.out.println(''c'');
+   }		
+   public static void main(String[ ] args) {	
+     A object = new A();
+     object.print(12);	
+   }	
+}
+*/
+
+//c
+
+//Fill in the blanks to define a new class Falcon, based on the superclass Bird.
+class Falcon extends Bird {
+
+ }
+
+//Object variables store...
+
+//References
+
+//What term is used for hiding the details of an object from the other parts of a program?
+
+//Encapsulation
+
+//A class Car and its subclass BMW each have a method run(), which was written by the developer as part of the class definition. If CarObj refers to an object of type BMW, what will CarObj.run(); do?
+
+//The run() method defined in BMW will be called.
+
+/*
+Valentine, Holiday, and Birthday inherit from the class Card. In order for the following code to be correct, what type must the reference variable card be?
+card = new Valentine( "A", 14 ) ;
+card.greeting();
+
+card = new Holiday( "B" ) ;
+card.greeting();
+
+card = new Birthday( "C", 12 ) ;
+card.greeting();
+*/
+
+//Card
+
+// 55 Lesson
+
+/*
+Shapes
+
+
+You are working on a graphical app, which includes multiple different shapes.
+The given code declares a base Shape class with an abstract area() method and a width attribute.
+You need to create two Shape subclasses, Square and Circle, which initialize the width attribute using their constructor, and define their area() methods.
+The area() for the Square class should output the area of the square (the square of the width), while for the Circle, it should output the area of the given circle (PI*width*width).
+The code in main creates two objects with the given user input and calls the area() methods.
+
+Sample Input:
+5
+2
+
+Sample Output:
+25
+12.566370614359172
+
+The area of the square is 5*5=25, while the area of the circle is PI*2*2=12.566370614359172
+*/
+import java.util.Scanner;
+
+abstract class Shape {
+    int width;
+    abstract void area();
+}
+
+class Square extends Shape{
+    public Square(int x){
+        width=x;
+    }
+    void area(){
+    System.out.println(width*width);
+    }
+}
+
+class Circle extends Shape{
+    public Circle(int x){
+        width=x;
+    }
+    void area(){
+    System.out.println(Math.PI*width*width);
+    }
+}
+
+public class Program {
+    public static void main(String[ ] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        
+        Square a = new Square(x);
+        Circle b = new Circle(y);
+        a.area();
+        b.area();
+    }
+}
