@@ -1,42 +1,159 @@
 <!-- 25 Lesson -->
 
 <!--
+Drag and drop from the options below to create a valid HTML5 doctype:
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<title>Title</title>
+
+</head>
+
+<body>
+
+The content of the document
+
+</body>
+
+</html>
 
 -->
 
+<!--
+Which element/feature is not new in HTML5?
+
+Image
+-->
 <!-- 26 Lesson -->
 
 <!--
+How many content models does HTML5 offer?
 
+7
 -->
 
+<!--
+Where is the metadata located in an HTML5 document? 
+
+head
+-->
+
+<!--
+Which content model contains almost all of the others?
+
+Flow
+-->
 <!-- 27 Lesson -->
 
 <!--
+Rearrange the following blocks to create a generalized HTML5 page structure.
 
+<header>
+<nav>
+<article>
+<section>
+<footer>
 -->
 
 <!-- 28 Lesson -->
 
 <!--
+The header element is appropriate to use...
 
+...inside of the body tag
 -->
 
+<!--
+Which tag specifies the footer element? 
+
+<footer>
+-->
+
+<!--
+Rearrange the sections to create a generic HTML5 page structure:
+
+<head>
+<header>
+<nav>
+<footer>
+
+-->
 <!-- 29 Lesson -->
 
 <!--
+Which element was usually used in HTML4 instead of the article tag?
 
+<div>
+-->
+
+<!--
+The section element should be used only inside an article element.
+
+False
+-->
+
+<!--
+The aside element is used to define:
+
+secondary content
 -->
 
 <!-- 30 Lesson -->
 
 <!--
+Fill in the blanks to add an audio element:
+<audio controls>
+
+<source src="test.ogg"
+
+    type="audio/ogg" >
+
+</audio>
 
 -->
+
+<!--
+The text in between the audio tags is:
+
+for not supported browsers
+-->
+
+<!--
+
+Which of the following is not an attribute of the audio element?
+
+repeat
+--> 
 
 <!-- 31 Lesson -->
 
 <!--
+
+Fill in the blanks to create a video element:
+<video controls>
+
+     <source src="video.mp4" type="video/mp4"/>
+
+     <source src="video.ogg" type="video/ogg"/>
+
+      Video not supported
+
+</video>
+
+-->
+
+<!--
+
+Rearrange the code to create a valid video tag that will attempt to play the mp4 file first.
+
+<video controls>
+<source src="a.mp4" type="video/mp4">
+<source src="a.ogg" type="video/ogg">
+Video is not supported
+</video>
 
 -->
 
@@ -44,59 +161,235 @@
 
 <!--
 
+Define a progress bar that shows 63 percent of progress:
+<progress
+
+   min="0"
+
+   max="100"
+
+   value="63">
+
+</progress>
+
 -->
 
 <!-- 33 Lesson -->
 
 <!--
+Before HTML5, application data was stored in:
+
+cookies
+-->
+
+<!--
+
+What are the two types of HTML5 web storage?
+Select All That Apply
+
+sessionStorage
+localStorage
+-->
+
+<!--
+
+Drag and drop from the options below to clear all values stored in the localStorage. Then store "a" using the key "b".
+localStorage.clear();
+
+localStorage.
+
+     setItem("b", "a");
 
 -->
 
 <!-- 34 Lesson -->
 
 <!--
+With the Geolocation API, you can obtain...
 
+...user location
+-->
+
+<!--
+Which choice is the mandatory parameter of the getCurrentPosition() method?
+
+showLocation
+-->
+
+<!--
+
+What are the two known ways to present location specific data?
+Select All That Apply
+
+Geodetic
+Civic
 -->
 
 <!-- 35 Lesson -->
 
 <!--
+How many times can HTML5 events be fired?
 
+Multiple
 -->
 
 <!-- 36 Lesson -->
 
 <!--
+What does SVG stand for?
 
+scalable vector graphics
+-->
+
+<!--
+Fill in the blanks to add "my.svg" to the page:
+<img src="my.svg"
+
+    width="300px" alt="" />
+-->
+
+<!--
+Fill in the blanks to create a red circle at the position X=50, Y=240:
+<svg width="1000" height="1000">
+
+   <circle cx="50" cy="240" 
+
+    r="10" fill="red" />
+
+</svg>
+
+-->
+
+<!--
+Fill in the blanks to add a line to the page, starting from coordinates 10, 20 and ending at 50, 100:
+<svg width="500" height="500">
+   <line x1="10" y1="20"
+    
+x2="50" y2="100" />
+
+</svg>
+
+-->
+
+<!--
+
+Which of the following is an HTML5 SVG shape?
+
+polygon
 -->
 
 <!-- 37 Lesson -->
 
 <!--
+Which tag is used to create shape animations?
 
+<animate>
+
+-->
+
+<!--
+Which shape is indicated by the following path?
+<path d="M0 0  L0 100
+    L100 100  L100 0  Z" />
+
+Square
 -->
 
 <!-- 38 Lesson -->
 
 <!--
+You can draw on the canvas using...
 
+JavaScript
+-->
+
+<!--
+X and Y are...
+
+...coordinates from upper left corner
+-->
+
+<!--
+fillRect (36,10,22,12) indicates a rectangle with a height of...
+
+12
 -->
 
 <!-- 39 Lesson -->
 
 <!--
 
+Which of the following statements are true?
+Select All That Apply
+
+SVG has better accessibility
+In Canvas, drawing is done with pixels.
 -->
 
 <!-- 40 Lesson -->
 
 <!--
 
+Which method is used to move the canvas element?
+
+translate()
+-->
+
+<!--
+The rotation parameter is in:
+
+Radians
+-->
+
+<!--
+What method is used to increase or decrease the size of the current drawing?
+
+scale
 -->
 
 <!-- 41 Lesson -->
 
 <!--
+Fill in the blanks:
+<form>
+
+   <input type="text" name="name" />
+
+</form>
+
+-->
+
+<!--
+
+Drag and drop from the options below to auto focus on the input and create a placeholder:
+<form>
+
+<input type="text" name="name"
+
+placeholder="Enter your name"
+
+ autofocus/>
+
+</form>
+
+-->
+
+<!--
+
+Designate the username field as required, and focus on the name field when the page loads:
+<form autocomplete="off">
+
+<input name="name"
+
+     type="text" autofocus />
+
+<br />
+
+<input name="username"
+
+     type="text" required/>
+
+</form>
 
 -->
 
@@ -104,10 +397,89 @@
 
 <!--
 
+Fill in the blank to create a Search Box:
+<input type="search" />
+
+-->
+
+<!--
+Fill in the blanks to associate the input with the datalist:
+<form>
+
+<input type="text" name="color"
+      
+list="colors" />
+
+<datalist id="colors">
+
+   <option value="Red">
+
+   <option value="Blue">
+
+   <option value="Green">
+
+</datalist>
+
+</form>
+
+-->
+
+<!--
+Which of the following is not a supported type for the input tag?
+
+planet
 -->
 
 <!-- 43 Lesson -->
 
 <!--
+Which choice is the correct HTML5 element for playing video files?
+
+<video>
+-->
+
+<!--
+The <canvas> element in HTML5 is used to:
+
+draw graphics
+-->
+
+<!--
+Which tag contains the navigation?
+
+<nav>
+
+-->
+
+<!--
+sessionStorage stores data for the duration of how many session(s)?
+
+one
+-->
+
+<!--
+
+What shape results from the following code?
+<svg width="100" height="100">
+  <line x1="50" y1="0" x2="50" y2="100" 
+    style="stroke:black" />
+  <line x1="0" y1="50" x2="100" y2="50" 
+    style="stroke:black" />
+</svg>
+
+Plus sign
+-->
+
+<!--
+Fill in the blanks to turn off auto complete and require the password field.
+<form autocomplete="off">
+
+<input type="text" name="name" />
+
+<input type="password" 
+
+     name="pass" required />
+
+</form>
 
 -->
