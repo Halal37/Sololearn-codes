@@ -150,9 +150,60 @@ a = [x*10 for x in range(5, 9)]
 
 # 58 Lesson
 
+#What is the result of this code?
+print("{0}{1}{0}".format("abra", "cad"))
+
+#abracadabra
+
+"""
+What is the result of this code?
+str="{c}, {b}, {a}".format(a=5, b=9, c=7)
+print(str)
+"""
+
+#7, 9, 5
+
 # 59 Lesson
 
+#Fill in the blanks to turn the string uppercase.
+
+a = "Spam"
+
+b = a.upper()
+
+"""
+What is the result of this code?
+a=min([sum([11, 22]), max(abs(-30), 2)])
+print(a)
+"""
+
+#30
+
+"""
+What is the result of this code?
+nums = [-1, 2, -3, 4, -5]
+if all([abs(i) < 3 for i in nums]):
+  print(1)
+else:
+  print(2)
+"""
+
+#2
+
 # 60 Lesson
+
+#Fill in the blanks to read the contents of a file using the "with" statement.
+with open(filename) as f:
+
+   text = f.read()
+
+#Why has the character-counting code been put in a function?
+
+#So it can be run multiple times
+
+#What is the purpose of the round function in the code?
+
+#To reduce the number of digits printed
 
 # 61 Lesson
 
