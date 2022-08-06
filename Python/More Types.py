@@ -207,4 +207,52 @@ with open(filename) as f:
 
 # 61 Lesson
 
+#Can you slice a tuple?
+
+#Yes
+
+#Which list slicing reverses the list 'numbers'?
+
+#numbers[::-1]
+
+#What could be described as an immutable list?
+
+#A tuple
+
+#What is returned by functions that don't have a return statement?
+
+#None
+
+"""
+What is the result of this code?
+nums = (55, 44, 33, 22)
+print(max(min(nums[:2]), abs(-42)))
+"""
+
+#44
+
 # 62 Lesson
+
+"""
+Longest Word
+
+
+Given a text as input, find and output the longest word.
+
+Sample Input
+this is an awesome text
+
+Sample Output
+awesome
+"""
+
+txt = input()
+split=txt.split()
+lenght=0
+
+for i in split:
+  if len(i)>lenght:
+      lenght=len(i)
+      word=i
+      
+print(word)
