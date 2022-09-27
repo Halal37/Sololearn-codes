@@ -1,0 +1,43 @@
+/* 2 Lesson */
+
+/*Let's check your CSS knowledge.
+Complete the following code to define the text color of the paragraphs.*/
+
+p {
+
+   color: #868686;
+
+}
+
+/* 3 Lesson */
+
+/*What will be the bottom margin of a div with the following style?
+
+div {
+  padding: 10px 5px;
+  margin: 15px 0;
+}
+*/
+
+/*15px*/
+
+/* 4 Lesson */
+
+/*
+What is the total height of the following element?
+
+.test {
+  height: 10px;
+  padding: 5px 0;
+}
+*/
+
+/*20px*/
+
+/*Fill in the blanks to make the element with id="text" take the full width of the page.*/
+
+#text {
+
+  width: 100%;
+
+}
